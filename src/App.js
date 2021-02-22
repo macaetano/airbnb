@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import styled, { createGlobalStyle } from "styled-components";
+
+import Header from "./components/Header";
+
+const GlobalStyle = createGlobalStyle`
+  * {
+
+    box-sizing: border-box;
+    margin: 0;
+  }
+    html, body {
+    font-family: 'Airbnb Cereal App Book';
+  }
+`;
+
+const Container = styled.div`
+  min-width: 100%;
+  min-height: 100%;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <GlobalStyle />
+      <Header />
+      <div style={{ height: "1000px", backgroundColor: "red" }}></div>
+    </Container>
   );
 }
 
