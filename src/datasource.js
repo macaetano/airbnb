@@ -61,6 +61,11 @@ const data = {
         "https://a0.muscache.com/im/pictures/ff69ac49-64e7-4f4a-ae2b-ee01163d0790.jpg?im_w=720",
     },
     {
+      title: "Acomodações únicas",
+      image:
+        "https://a0.muscache.com/im/pictures/36f53e61-db8d-403c-9122-5b761c0e4264.jpg?im_w=720",
+    },
+    {
       title: "Animais de estimação são bem-vindos",
       image:
         "https://a0.muscache.com/im/pictures/fbe849a4-841a-41b3-b770-419402a6316f.jpg?im_w=720",

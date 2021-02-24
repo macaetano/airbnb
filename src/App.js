@@ -1,6 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 import Header from "./components/Header";
+import City from "./components/City";
+import ListContainer from "./components/LiveAnywhere";
+import Banner from "./components/Banner";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -10,6 +13,10 @@ const GlobalStyle = createGlobalStyle`
   }
     html, body {
     font-family: 'Airbnb Cereal App Book';
+  }
+  button {
+    font-family: 'Airbnb Cereal App Book';
+
   }
 `;
 
@@ -23,7 +30,9 @@ function App() {
     <Container>
       <GlobalStyle />
       <Header />
-      <div style={{ height: "1000px", backgroundColor: "red" }}></div>
+      <City />
+      <ListContainer />
+      <Banner />
     </Container>
   );
 }

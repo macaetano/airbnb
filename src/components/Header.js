@@ -42,6 +42,8 @@ const StyledHeader = styled.div`
   position: ${(p) => (p.isFocused ? "fixed" : "static")};
   top: 0;
   width: 100%;
+  box-shadow: ${(p) =>
+    p.isFocused ? "rgba(0, 0, 0, 0.08) 0px 1px 12px" : "0"};
 
   .logo-container {
     width: 102px;
